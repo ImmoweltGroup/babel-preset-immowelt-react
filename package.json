@@ -1,0 +1,69 @@
+{
+  "name": "@immowelt/babel-preset-immowelt-react",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Immonet dev team <aegaeon@immonet.de> (https://immonet.de)",
+  "license": "UNLICENSED",
+  "description": "The babel preset for an react environment",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run lint && npm run jest:coverage",
+    "lint": "eslint src",
+    "jest": "jest",
+    "jest:watch": "npm run jest -- --watch",
+    "jest:coverage": "npm run jest -- --coverage"
+  },
+  "dependencies": {
+    "babel-runtime": "6.23.0",
+    "babel-preset-react-app": "^3.0.1"
+  },
+  "devDependencies": {
+    "@immowelt/eslint-config-immowelt-react": "^1.0.0",
+    "eslint": "3.19.0",
+    "jest": "^20.0.4"
+  },
+  "release": {
+    "analyzeCommits": "@inkdpixels/commit-analyzer",
+    "generateNotes": "@inkdpixels/release-notes-generator"
+  },
+  "browserslist": [
+    "last 1 versions"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    },
+    "testMatch": [
+      "<rootDir>/src/**/?(*.)spec.js"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.js$"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
+  "keywords": [
+    "babel",
+    "immowelt",
+    "preset",
+    "immonet"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ImmoweltHH/babel-preset-immowelt-react.git"
+  }
+}
