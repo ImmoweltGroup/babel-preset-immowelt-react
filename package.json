@@ -1,6 +1,6 @@
 {
   "name": "@immowelt/babel-preset-immowelt-react",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
   "author": "Immonet dev team <aegaeon@immonet.de> (https://immonet.de)",
   "license": "UNLICENSED",
@@ -11,16 +11,20 @@
     "lint": "eslint src",
     "jest": "jest",
     "jest:watch": "npm run jest -- --watch",
-    "jest:coverage": "npm run jest -- --coverage"
+    "jest:coverage": "npm run jest -- --coverage",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "babel-runtime": "6.23.0",
     "babel-preset-react-app": "^3.0.1"
   },
   "devDependencies": {
+    "@inkdpixels/commit-analyzer": "^1.0.0",
+    "@inkdpixels/release-notes-generator": "^1.0.0",
     "@immowelt/eslint-config-immowelt-react": "^1.0.0",
     "eslint": "3.19.0",
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "semantic-release": "^6.3.6"
   },
   "release": {
     "analyzeCommits": "@inkdpixels/commit-analyzer",

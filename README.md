@@ -23,5 +23,9 @@ Then create a file named `.babelrc` with following contents in the root folder o
 }
 ```
 
+## Contributing
+Please make sure that you adhere to our code style, you can validate your changes / PR by executing `npm run lint`.
+Visit the [eslint-config-immowelt-react](https://github.com/ImmoweltHH/eslint-config-immowelt-react) package for more information.
+
 ## License
 See the `LICENSE` file at the root of the repository.
