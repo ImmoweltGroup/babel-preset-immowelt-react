@@ -1,9 +1,10 @@
 # @immowelt/babel-preset-immowelt-react
 
+[![Powered by Immowelt](https://img.shields.io/badge/powered%20by-immowelt-yellow.svg?colorB=ffb200)](https://stackshare.io/immowelt-group/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ImmoweltHH/babel-preset-immowelt-react.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/ImmoweltHH/babel-preset-immowelt-react.svg?branch=master)](https://travis-ci.org/ImmoweltHH/babel-preset-immowelt-react)
-[![Dependency Status](https://david-dm.org/ImmoweltHH/babel-preset-immowelt-react.svg)](https://david-dm.org/ImmoweltHH/babel-preset-immowelt-react)
-[![devDependency Status](https://david-dm.org/ImmoweltHH/babel-preset-immowelt-react/dev-status.svg)](https://david-dm.org/ImmoweltHH/babel-preset-immowelt-react#info=devDependencies&view=table)
+[![Build Status](https://travis-ci.org/ImmoweltGroup/babel-preset-immowelt-react.svg?branch=master)](https://travis-ci.org/ImmoweltGroup/babel-preset-immowelt-react)
+[![Dependency Status](https://david-dm.org/ImmoweltGroup/babel-preset-immowelt-react.svg)](https://david-dm.org/ImmoweltGroup/babel-preset-immowelt-react)
+[![devDependency Status](https://david-dm.org/ImmoweltGroup/babel-preset-immowelt-react/dev-status.svg)](https://david-dm.org/ImmoweltGroup/babel-preset-immowelt-react#info=devDependencies&view=table)
 
 This package includes the Babel preset used by [Create React App](https://github.com/facebookincubator/create-react-app) as well as other babel plugins or presets we might add to our transpilation stack in the future.
 
