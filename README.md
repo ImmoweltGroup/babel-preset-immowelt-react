@@ -1,5 +1,6 @@
 # @immowelt/babel-preset-immowelt-react
 
+[![Powered by Immowelt](https://img.shields.io/badge/powered%20by-immowelt-yellow.svg?colorB=ffb200)](https://stackshare.io/immowelt-group/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ImmoweltGroup/babel-preset-immowelt-react.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/ImmoweltGroup/babel-preset-immowelt-react.svg?branch=master)](https://travis-ci.org/ImmoweltGroup/babel-preset-immowelt-react)
 [![Dependency Status](https://david-dm.org/ImmoweltGroup/babel-preset-immowelt-react.svg)](https://david-dm.org/ImmoweltGroup/babel-preset-immowelt-react)
