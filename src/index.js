@@ -1,4 +1,11 @@
 module.exports = {
   presets: ['react-app'],
-  plugins: ['flow-react-proptypes']
+  env: {
+    development: {
+      plugins: ['flow-react-proptypes']
+    },
+    test: {
+      plugins: ['flow-react-proptypes']
+    }
+  }
 };
