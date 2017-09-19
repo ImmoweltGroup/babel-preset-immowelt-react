@@ -1,4 +1,5 @@
 const babel = require('babel-core');
+const createConfig = require('./createConfig.js');
 const config = require('./index.js');
 
 describe('babel-preset-immowelt-react', () => {
@@ -11,7 +12,7 @@ describe('babel-preset-immowelt-react', () => {
       {
         filename: 'foo.js'
       },
-      config.createConfig()
+      createConfig()
     );
   }
 
@@ -35,7 +36,7 @@ export default PrettyNumberList;
   });
 
   it('should export a valid object structure.', () => {
-    expect(typeof createOptions()).toBe('object');
+    expect(typeof config).toBe('object');
   });
 
   it('should not throw errors when transforming a code fixture with the config.', () => {

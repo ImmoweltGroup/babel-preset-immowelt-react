@@ -1,15 +1,3 @@
-function createConfig() {
-  const config = {
-    presets: ['react-app'],
-    plugins: []
-  };
-
-  if (process.env.NODE_ENV === 'development') {
-    config.plugins = ['flow-react-proptypes'];
-  }
-
-  return config;
-}
+const createConfig = require('./createConfig.js');
 
 module.exports = createConfig();
-module.exports.createConfig = createConfig;
