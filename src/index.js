@@ -1,11 +1,15 @@
-module.exports = {
-  presets: ['react-app'],
-  env: {
-    development: {
-      plugins: ['flow-react-proptypes']
-    },
-    test: {
-      plugins: ['flow-react-proptypes']
-    }
+function createConfig() {
+  const config = {
+    presets: ['react-app'],
+    plugins: []
+  };
+
+  if (process.env.NODE_ENV === 'development') {
+    config.plugins = ['flow-react-proptypes'];
   }
-};
+
+  return config;
+}
+
+module.exports = createConfig();
+module.exports.createConfig = createConfig;
