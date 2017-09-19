@@ -1,3 +1,4 @@
 module.exports = {
-  presets: ['react-app']
+  presets: ['react-app'],
+  plugins: ['flow-react-proptypes']
 };
