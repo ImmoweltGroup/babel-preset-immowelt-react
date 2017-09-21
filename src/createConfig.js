@@ -1,6 +1,6 @@
 function createConfig() {
   const config = {
-    presets: ['react-app'],
+    presets: ['react-app', 'flow'],
     plugins: []
   };
 
