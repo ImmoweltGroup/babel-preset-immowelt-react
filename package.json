@@ -23,7 +23,6 @@
     ]
   },
   "dependencies": {
-    "babel-plugin-flow-react-proptypes": "^8.0.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-app": "^3.0.1",
     "babel-runtime": "6.26.0"
@@ -34,8 +33,10 @@
     "@immowelt/styleguide-javascript": "^1.0.6",
     "@inkdpixels/commit-analyzer": "^1.0.0",
     "@inkdpixels/release-notes-generator": "^1.0.0",
-    "eslint": "4.10.0",
     "babel-core": "^6.26.0",
+    "babel-plugin-flow-runtime": "^0.15.0",
+    "eslint": "4.10.0",
+    "flow-runtime": "^0.16.0",
     "husky": "^0.14.3",
     "jest": "^21.0.2",
     "lint-staged": "^4.1.2",
