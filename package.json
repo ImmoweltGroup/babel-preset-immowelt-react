@@ -23,11 +23,10 @@
     ]
   },
   "dependencies": {
+    "babel-plugin-flow-react-proptypes": "^9.1.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-app": "^3.0.1",
-    "babel-runtime": "6.26.0",
-    "babel-plugin-flow-runtime": "^0.15.0",
-    "flow-runtime": "^0.16.0"
+    "babel-runtime": "6.26.0"
   },
   "devDependencies": {
     "@immowelt/eslint-config-immowelt-react": "^2.0.0",

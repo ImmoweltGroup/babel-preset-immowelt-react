@@ -46,9 +46,9 @@ export default PrettyNumberList;
   it('should transform flow annotations into flow-runtime types when running the compilation in development environments.', () => {
     expect(
       babel.transform(codeFixture, createOptions('development')).code
-    ).toContain('flow-runtime');
+    ).toContain('.propTypes');
     expect(
       babel.transform(codeFixture, createOptions('production')).code
-    ).not.toContain('flow-runtime');
+    ).not.toContain('.propTypes');
   });
 });

@@ -5,7 +5,7 @@ function createConfig() {
   };
 
   if (process.env.NODE_ENV === 'development') {
-    config.plugins = ['flow-runtime'];
+    config.plugins = ['flow-react-proptypes'];
   }
 
   return config;
