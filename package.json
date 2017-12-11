@@ -29,17 +29,17 @@
     "babel-runtime": "6.26.0"
   },
   "devDependencies": {
-    "@immowelt/eslint-config-immowelt-react": "^2.0.0",
-    "@immowelt/jest-preset-node": "^1.0.0",
-    "@immowelt/styleguide-javascript": "^1.0.6",
-    "@inkdpixels/commit-analyzer": "^1.0.0",
-    "@inkdpixels/release-notes-generator": "^1.0.0",
+    "@immowelt/eslint-config-immowelt-react": "2.0.2",
+    "@immowelt/jest-preset-node": "1.0.0",
+    "@immowelt/styleguide-javascript": "1.0.10",
+    "@inkdpixels/commit-analyzer": "1.0.1",
+    "@inkdpixels/release-notes-generator": "1.0.1",
     "eslint": "4.13.0",
-    "babel-core": "^6.26.0",
-    "husky": "^0.14.3",
-    "jest": "^21.0.2",
-    "lint-staged": "^6.0.0",
-    "prettier": "^1.6.1",
+    "babel-core": "6.26.0",
+    "husky": "0.14.3",
+    "jest": "21.2.1",
+    "lint-staged": "6.0.0",
+    "prettier": "1.9.1",
     "semantic-release": "^8.0.0"
   },
   "engines": {
