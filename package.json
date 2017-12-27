@@ -7,12 +7,12 @@
   "description": "The babel preset for an react environment",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm run lint && npm run jest:coverage",
+    "test": "yarn run lint && yarn run jest:coverage",
     "lint": "eslint src",
     "prettier": "prettier --write src/**/*.js",
     "jest": "jest",
-    "jest:watch": "npm run jest -- --watch",
-    "jest:coverage": "npm run jest -- --coverage",
+    "jest:watch": "yarn run jest -- --watch",
+    "jest:coverage": "yarn run jest -- --coverage",
     "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post",
     "precommit": "lint-staged && npm test"
   },
@@ -43,8 +43,7 @@
     "semantic-release": "^8.0.0"
   },
   "engines": {
-    "node": ">=8.2.0",
-    "npm": ">=5.3.0"
+    "node": ">=8.2.0"
   },
   "release": {
     "analyzeCommits": "@inkdpixels/commit-analyzer",
