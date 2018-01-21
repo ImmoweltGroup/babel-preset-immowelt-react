@@ -23,7 +23,7 @@
     ]
   },
   "dependencies": {
-    "babel-plugin-flow-react-proptypes": "^13.0.0",
+    "babel-plugin-flow-react-proptypes": "^14.0.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-app": "^3.0.1",
     "babel-runtime": "6.26.0"
