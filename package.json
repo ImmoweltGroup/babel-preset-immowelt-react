@@ -7,50 +7,14 @@
   "description": "The babel preset for an react environment",
   "main": "src/index.js",
   "scripts": {
-    "test": "yarn run lint && yarn run jest:coverage",
+    "test": "jest",
     "lint": "eslint src",
     "prettier": "prettier --write src/**/*.js",
-    "jest": "jest",
-    "jest:watch": "yarn run jest -- --watch",
-    "jest:coverage": "yarn run jest -- --coverage",
-    "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post",
-    "precommit": "lint-staged && npm test"
-  },
-  "lint-staged": {
-    "src/**/*.{js,json,css}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "dependencies": {
-    "babel-plugin-flow-react-proptypes": "^13.0.0",
-    "babel-preset-flow": "^6.23.0",
-    "babel-preset-react-app": "^3.0.1",
-    "babel-runtime": "6.26.0"
-  },
-  "devDependencies": {
-    "@immowelt/eslint-config-immowelt-react": "2.0.4",
-    "@immowelt/jest-preset-node": "1.0.1",
-    "@immowelt/styleguide-javascript": "1.0.11",
-    "@inkdpixels/commit-analyzer": "1.0.1",
-    "@inkdpixels/release-notes-generator": "1.0.1",
-    "eslint": "5.5.0",
-    "babel-core": "6.26.3",
-    "husky": "0.14.3",
-    "jest": "23.6.0",
-    "lint-staged": "6.1.1",
-    "prettier": "1.14.2",
-    "semantic-release": "^8.0.0"
+    "release": "semantic-release"
   },
   "engines": {
-    "node": ">=8.2.0"
-  },
-  "release": {
-    "analyzeCommits": "@inkdpixels/commit-analyzer",
-    "generateNotes": "@inkdpixels/release-notes-generator"
-  },
-  "jest": {
-    "preset": "@immowelt/jest-preset-node"
+    "node": ">=8.11.4",
+    "yarn": ">=1.6.0"
   },
   "keywords": [
     "babel",
@@ -58,6 +22,50 @@
     "preset",
     "immonet"
   ],
+  "dependencies": {
+    "babel-plugin-flow-react-proptypes": "24.1.2",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react-app": "3.1.2",
+    "babel-runtime": "6.26.0"
+  },
+  "devDependencies": {
+    "@immowelt/eslint-config-immowelt-react": "2.1.1",
+    "@immowelt/jest-preset-node": "1.1.1",
+    "eslint": "5.5.0",
+    "babel-core": "6.26.3",
+    "jest": "23.6.0",
+    "prettier": "1.14.2",
+    "semantic-release": "13.4.1"
+  },
+  "jest": {
+    "preset": "@immowelt/jest-preset-node"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "analyzeCommits": {
+      "releaseRules": [
+        {
+          "type": "BREAKING",
+          "release": "major"
+        },
+        {
+          "type": "FEATURE",
+          "release": "minor"
+        },
+        {
+          "type": "BUGFIX",
+          "release": "patch"
+        },
+        {
+          "type": "SECURITY",
+          "release": "patch"
+        }
+      ]
+    },
+    "branch": "master"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ImmoweltGroup/babel-preset-immowelt-react.git"

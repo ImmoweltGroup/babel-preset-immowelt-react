@@ -1,8 +1,13 @@
-node_modules
-coverage
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# Ignore the symlink ".editorconfig" from the @immowelt/styleguide-javascript package.
-.editorconfig
+# dependencies
+/node_modules/
 
-# Ignore the symlink ".prettierrc" from the @immowelt/styleguide-javascript package.
-.prettierrc
+# compiled assets
+/dist/
+
+# test results
+/coverage/
+
+# IDEs
+/.idea/

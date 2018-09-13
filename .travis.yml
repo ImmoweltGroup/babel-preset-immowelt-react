@@ -6,9 +6,12 @@ cache:
 notifications:
   email: false
 install:
-  - yarn install
+  - yarn
+script:
+  - yarn lint
+  - yarn test --coverage
 after_success:
-  - npm run semantic-release
+  - yarn release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
