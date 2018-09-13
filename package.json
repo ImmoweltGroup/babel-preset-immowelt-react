@@ -20,7 +20,8 @@
     "babel",
     "immowelt",
     "preset",
-    "immonet"
+    "immonet",
+    "react"
   ],
   "dependencies": {
     "babel-plugin-flow-react-proptypes": "24.1.2",

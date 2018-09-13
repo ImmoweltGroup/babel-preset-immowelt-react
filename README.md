@@ -10,9 +10,11 @@
 This package includes the Babel preset used by [Create React App](https://github.com/facebookincubator/create-react-app) as well as other babel plugins or presets we might add to our transpilation stack in the future.
 
 ## Usage
+
 If you want to use the `@immowelt/babel-preset-immowelt-react` preset, you can install it by executing:
-```js
-npm i -S @immowelt/babel-preset-immowelt-react
+
+```sh
+yarn add @immowelt/babel-preset-immowelt-react --dev
 ```
 
 Then create a file named `.babelrc` with following contents in the root folder of your project:
