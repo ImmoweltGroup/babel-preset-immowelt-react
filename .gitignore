@@ -3,9 +3,6 @@
 # dependencies
 /node_modules/
 
-# compiled assets
-/dist/
-
 # test results
 /coverage/
 
